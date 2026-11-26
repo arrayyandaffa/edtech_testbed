@@ -1,0 +1,19 @@
+import nltk
+from nltk.tokenize import TreebankWordTokenizer, TweetTokenizer, regexp_tokenize
+
+# Teks uji yang mengandung kontraksi, tanda baca, hashtag, mention, emoji, dan URL
+teks = "Don't miss out on the #NLP event at @AI_Lab! It's gonna be awesome :D http://example.com"
+
+# 1. Treebank Tokenizer (Standar Penn Treebank)
+tb_tokens = TreebankWordTokenizer().tokenize(teks)
+
+# 2. Tweet Tokenizer (NLTK TweetTokenizer)
+tweet_tokens = TweetTokenizer().tokenize(teks)
+
+# 3. Custom Regex Tokenizer (Pola untuk menangkap URL, mention, hashtag, kata/kontraksi, dan tanda baca)
+pattern = r"https?://\S+|@\w+|#\w+|\w+(?:'\w+)?|[^\w\s]"
+regex_tokens = regexp_tokenize(teks, pattern)
+
+print("Treebank:", tb_tokens)
+print("Tweet   :", tweet_tokens)
+print("Regex   :", regex_tokens)

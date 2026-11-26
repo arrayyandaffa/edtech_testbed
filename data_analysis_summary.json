@@ -1,0 +1,481 @@
+{
+  "descriptive_stats": {
+    "student_id": {
+      "count": 1000,
+      "mean": 500.5,
+      "median": 500.5,
+      "std": 288.8194360957494,
+      "min": 1,
+      "max": 1000,
+      "q25": 250.75,
+      "q75": 750.25,
+      "skewness": 0.0,
+      "kurtosis": -1.2
+    },
+    "study_time_hours": {
+      "count": 1000,
+      "mean": 3.5707,
+      "median": 3.6,
+      "std": 1.4785593148898855,
+      "min": 0.5,
+      "max": 8.1,
+      "q25": 2.6,
+      "q75": 4.5,
+      "skewness": 0.12149946896306266,
+      "kurtosis": -0.3404332608649945
+    },
+    "attendance_percent": {
+      "count": 1000,
+      "mean": 85.09230000000001,
+      "median": 85.2,
+      "std": 9.270684780872788,
+      "min": 54.8,
+      "max": 100.0,
+      "q25": 78.8,
+      "q75": 91.9,
+      "skewness": -0.3366855274460593,
+      "kurtosis": -0.26147237994552164
+    },
+    "sleep_hours": {
+      "count": 1000,
+      "mean": 6.7995,
+      "median": 6.8,
+      "std": 1.2035274106675877,
+      "min": 3.2,
+      "max": 10.0,
+      "q25": 5.9,
+      "q75": 7.6,
+      "skewness": -0.02309501807541241,
+      "kurtosis": -0.21821553066531996
+    },
+    "previous_grade": {
+      "count": 1000,
+      "mean": 69.7409,
+      "median": 69.6,
+      "std": 12.613425216240262,
+      "min": 31.3,
+      "max": 100.0,
+      "q25": 61.0,
+      "q75": 78.4,
+      "skewness": 0.0014120762185032075,
+      "kurtosis": -0.23812882627407017
+    },
+    "final_exam_score": {
+      "count": 1000,
+      "mean": 83.5435,
+      "median": 83.8,
+      "std": 10.341332646758392,
+      "min": 46.8,
+      "max": 100.0,
+      "q25": 76.07499999999999,
+      "q75": 91.525,
+      "skewness": -0.2192969084996025,
+      "kurtosis": -0.5110671202137427
+    },
+    "student_id_zscore": {
+      "count": 1000,
+      "mean": -5.684341886080802e-17,
+      "median": 0.0,
+      "std": 1.0,
+      "min": -1.7294542457122097,
+      "max": 1.7294542457122097,
+      "q25": -0.8647271228561049,
+      "q75": 0.8647271228561049,
+      "skewness": 0.0,
+      "kurtosis": -1.1999999999999997
+    },
+    "study_time_hours_zscore": {
+      "count": 1000,
+      "mean": 3.552713678800501e-18,
+      "median": 0.019816587474667663,
+      "std": 1.0,
+      "min": -2.076818947387774,
+      "max": 3.0633197832427275,
+      "q25": -0.6565174560293457,
+      "q75": 0.6285172266282797,
+      "skewness": 0.12149946896306266,
+      "kurtosis": -0.34043326086499404
+    },
+    "attendance_percent_zscore": {
+      "count": 1000,
+      "mean": -9.166001291305293e-16,
+      "median": 0.011617264802509521,
+      "std": 0.9999999999999999,
+      "min": -3.2675364027583886,
+      "max": 1.608047339799262,
+      "q25": -0.6787308757366275,
+      "q75": 0.7343254744294182,
+      "skewness": -0.3366855274460566,
+      "kurtosis": -0.26147237994552164
+    },
+    "sleep_hours_zscore": {
+      "count": 1000,
+      "mean": -9.414691248821327e-17,
+      "median": 0.00041544546104053964,
+      "std": 1.0,
+      "min": -2.9907918740325026,
+      "max": 2.6592663961219682,
+      "q25": -0.7473863844123448,
+      "q75": 0.6651281831262722,
+      "skewness": -0.023095018075412328,
+      "kurtosis": -0.2182155306653204
+    },
+    "previous_grade_zscore": {
+      "count": 1000,
+      "mean": 3.206324095117452e-16,
+      "median": -0.01117063744260266,
+      "std": 1.0,
+      "min": -3.047617862791614,
+      "max": 2.398959797299172,
+      "q25": -0.6929838525340252,
+      "q75": 0.686498698930017,
+      "skewness": 0.0014120762185023152,
+      "kurtosis": -0.23812882627406973
+    },
+    "final_exam_score_zscore": {
+      "count": 1000,
+      "mean": 5.142553050063725e-16,
+      "median": 0.024803379676642104,
+      "std": 0.9999999999999999,
+      "min": -3.5530720512619487,
+      "max": 1.5913326224119173,
+      "q25": -0.722198990701753,
+      "q75": 0.7718057500550373,
+      "skewness": -0.21929690849960395,
+      "kurtosis": -0.5110671202137413
+    }
+  },
+  "categorical_stats": {
+    "gender": {
+      "unique_count": 2,
+      "most_common": "Female",
+      "most_common_count": 510,
+      "value_counts": {
+        "Female": 510,
+        "Male": 490
+      }
+    },
+    "parental_education": {
+      "unique_count": 4,
+      "most_common": "High School",
+      "most_common_count": 356,
+      "value_counts": {
+        "High School": 356,
+        "Bachelors": 308,
+        "Masters": 184,
+        "PhD": 50
+      }
+    },
+    "internet_access": {
+      "unique_count": 2,
+      "most_common": "Yes",
+      "most_common_count": 854,
+      "value_counts": {
+        "Yes": 854,
+        "No": 146
+      }
+    },
+    "extracurricular_activities": {
+      "unique_count": 2,
+      "most_common": "Yes",
+      "most_common_count": 572,
+      "value_counts": {
+        "Yes": 572,
+        "No": 428
+      }
+    },
+    "part_time_job": {
+      "unique_count": 2,
+      "most_common": "No",
+      "most_common_count": 684,
+      "value_counts": {
+        "No": 684,
+        "Yes": 316
+      }
+    },
+    "final_grade": {
+      "unique_count": 5,
+      "most_common": "B",
+      "most_common_count": 354,
+      "value_counts": {
+        "B": 354,
+        "A": 284,
+        "C": 261,
+        "D": 89,
+        "F": 12
+      }
+    }
+  },
+  "correlation_analysis": {
+    "matrix": {
+      "student_id": {
+        "student_id": 1.0,
+        "study_time_hours": 0.02761482429578035,
+        "attendance_percent": -0.04465071737449996,
+        "sleep_hours": -0.012303800027317891,
+        "previous_grade": 0.011916616568922964,
+        "final_exam_score": 0.025281646011595955,
+        "student_id_zscore": 0.9999999999999994,
+        "study_time_hours_zscore": 0.027614824295781746,
+        "attendance_percent_zscore": -0.04465071737450335,
+        "sleep_hours_zscore": -0.01230380002731927,
+        "previous_grade_zscore": 0.011916616568929828,
+        "final_exam_score_zscore": 0.02528164601159448
+      },
+      "study_time_hours": {
+        "student_id": 0.02761482429578035,
+        "study_time_hours": 1.0,
+        "attendance_percent": -0.043712229952552216,
+        "sleep_hours": 0.005594481547968517,
+        "previous_grade": -0.03570017330952957,
+        "final_exam_score": 0.5675131881039116,
+        "student_id_zscore": 0.027614824295780566,
+        "study_time_hours_zscore": 0.9999999999999989,
+        "attendance_percent_zscore": -0.04371222995255252,
+        "sleep_hours_zscore": 0.005594481547968473,
+        "previous_grade_zscore": -0.035700173309529085,
+        "final_exam_score_zscore": 0.567513188103912
+      },
+      "attendance_percent": {
+        "student_id": -0.04465071737449996,
+        "study_time_hours": -0.043712229952552216,
+        "attendance_percent": 1.0,
+        "sleep_hours": 0.034088792646307924,
+        "previous_grade": -0.014310404773233962,
+        "final_exam_score": 0.2618717790919861,
+        "student_id_zscore": -0.04465071737450008,
+        "study_time_hours_zscore": -0.04371222995255225,
+        "attendance_percent_zscore": 1.0,
+        "sleep_hours_zscore": 0.03408879264630795,
+        "previous_grade_zscore": -0.014310404773234349,
+        "final_exam_score_zscore": 0.2618717790919862
+      },
+      "sleep_hours": {
+        "student_id": -0.012303800027317891,
+        "study_time_hours": 0.005594481547968517,
+        "attendance_percent": 0.034088792646307924,
+        "sleep_hours": 1.0,
+        "previous_grade": 0.0009429641743517946,
+        "final_exam_score": 0.14781134461921094,
+        "student_id_zscore": -0.012303800027317967,
+        "study_time_hours_zscore": 0.005594481547968493,
+        "attendance_percent_zscore": 0.03408879264630805,
+        "sleep_hours_zscore": 0.9999999999999994,
+        "previous_grade_zscore": 0.0009429641743514777,
+        "final_exam_score_zscore": 0.14781134461921103
+      },
+      "previous_grade": {
+        "student_id": 0.011916616568922964,
+        "study_time_hours": -0.03570017330952957,
+        "attendance_percent": -0.014310404773233962,
+        "sleep_hours": 0.0009429641743517946,
+        "previous_grade": 1.0,
+        "final_exam_score": 0.4063271541556131,
+        "student_id_zscore": 0.01191661656892298,
+        "study_time_hours_zscore": -0.035700173309529605,
+        "attendance_percent_zscore": -0.014310404773233996,
+        "sleep_hours_zscore": 0.0009429641743518313,
+        "previous_grade_zscore": 1.0,
+        "final_exam_score_zscore": 0.4063271541556129
+      },
+      "final_exam_score": {
+        "student_id": 0.025281646011595955,
+        "study_time_hours": 0.5675131881039116,
+        "attendance_percent": 0.2618717790919861,
+        "sleep_hours": 0.14781134461921094,
+        "previous_grade": 0.4063271541556131,
+        "final_exam_score": 1.0,
+        "student_id_zscore": 0.025281646011596055,
+        "study_time_hours_zscore": 0.5675131881039127,
+        "attendance_percent_zscore": 0.2618717790919859,
+        "sleep_hours_zscore": 0.14781134461921117,
+        "previous_grade_zscore": 0.4063271541556135,
+        "final_exam_score_zscore": 1.0
+      },
+      "student_id_zscore": {
+        "student_id": 0.9999999999999994,
+        "study_time_hours": 0.027614824295780566,
+        "attendance_percent": -0.04465071737450008,
+        "sleep_hours": -0.012303800027317967,
+        "previous_grade": 0.01191661656892298,
+        "final_exam_score": 0.025281646011596055,
+        "student_id_zscore": 1.0,
+        "study_time_hours_zscore": 0.02761482429578191,
+        "attendance_percent_zscore": -0.04465071737450351,
+        "sleep_hours_zscore": -0.012303800027319315,
+        "previous_grade_zscore": 0.011916616568929835,
+        "final_exam_score_zscore": 0.025281646011594536
+      },
+      "study_time_hours_zscore": {
+        "student_id": 0.027614824295781746,
+        "study_time_hours": 0.9999999999999989,
+        "attendance_percent": -0.04371222995255225,
+        "sleep_hours": 0.005594481547968493,
+        "previous_grade": -0.035700173309529605,
+        "final_exam_score": 0.5675131881039127,
+        "student_id_zscore": 0.02761482429578191,
+        "study_time_hours_zscore": 1.0,
+        "attendance_percent_zscore": -0.04371222995255253,
+        "sleep_hours_zscore": 0.0055944815479684815,
+        "previous_grade_zscore": -0.035700173309529154,
+        "final_exam_score_zscore": 0.567513188103912
+      },
+      "attendance_percent_zscore": {
+        "student_id": -0.04465071737450335,
+        "study_time_hours": -0.04371222995255252,
+        "attendance_percent": 1.0,
+        "sleep_hours": 0.03408879264630805,
+        "previous_grade": -0.014310404773233996,
+        "final_exam_score": 0.2618717790919859,
+        "student_id_zscore": -0.04465071737450351,
+        "study_time_hours_zscore": -0.04371222995255253,
+        "attendance_percent_zscore": 1.0,
+        "sleep_hours_zscore": 0.03408879264630818,
+        "previous_grade_zscore": -0.014310404773234425,
+        "final_exam_score_zscore": 0.26187177909198583
+      },
+      "sleep_hours_zscore": {
+        "student_id": -0.01230380002731927,
+        "study_time_hours": 0.005594481547968473,
+        "attendance_percent": 0.03408879264630795,
+        "sleep_hours": 0.9999999999999994,
+        "previous_grade": 0.0009429641743518313,
+        "final_exam_score": 0.14781134461921117,
+        "student_id_zscore": -0.012303800027319315,
+        "study_time_hours_zscore": 0.0055944815479684815,
+        "attendance_percent_zscore": 0.03408879264630818,
+        "sleep_hours_zscore": 1.0,
+        "previous_grade_zscore": 0.0009429641743514238,
+        "final_exam_score_zscore": 0.14781134461921122
+      },
+      "previous_grade_zscore": {
+        "student_id": 0.011916616568929828,
+        "study_time_hours": -0.035700173309529085,
+        "attendance_percent": -0.014310404773234349,
+        "sleep_hours": 0.0009429641743514777,
+        "previous_grade": 1.0,
+        "final_exam_score": 0.4063271541556135,
+        "student_id_zscore": 0.011916616568929835,
+        "study_time_hours_zscore": -0.035700173309529154,
+        "attendance_percent_zscore": -0.014310404773234425,
+        "sleep_hours_zscore": 0.0009429641743514238,
+        "previous_grade_zscore": 1.0,
+        "final_exam_score_zscore": 0.4063271541556132
+      },
+      "final_exam_score_zscore": {
+        "student_id": 0.02528164601159448,
+        "study_time_hours": 0.567513188103912,
+        "attendance_percent": 0.2618717790919862,
+        "sleep_hours": 0.14781134461921103,
+        "previous_grade": 0.4063271541556129,
+        "final_exam_score": 1.0,
+        "student_id_zscore": 0.025281646011594536,
+        "study_time_hours_zscore": 0.567513188103912,
+        "attendance_percent_zscore": 0.26187177909198583,
+        "sleep_hours_zscore": 0.14781134461921122,
+        "previous_grade_zscore": 0.4063271541556132,
+        "final_exam_score_zscore": 1.0
+      }
+    },
+    "significant_correlations": [
+      {
+        "var1": "attendance_percent",
+        "var2": "attendance_percent_zscore",
+        "correlation": 1.0
+      },
+      {
+        "var1": "previous_grade",
+        "var2": "previous_grade_zscore",
+        "correlation": 1.0
+      },
+      {
+        "var1": "final_exam_score",
+        "var2": "final_exam_score_zscore",
+        "correlation": 1.0
+      },
+      {
+        "var1": "student_id",
+        "var2": "student_id_zscore",
+        "correlation": 0.9999999999999994
+      },
+      {
+        "var1": "sleep_hours",
+        "var2": "sleep_hours_zscore",
+        "correlation": 0.9999999999999994
+      },
+      {
+        "var1": "study_time_hours",
+        "var2": "study_time_hours_zscore",
+        "correlation": 0.9999999999999989
+      },
+      {
+        "var1": "final_exam_score",
+        "var2": "study_time_hours_zscore",
+        "correlation": 0.5675131881039127
+      },
+      {
+        "var1": "study_time_hours",
+        "var2": "final_exam_score_zscore",
+        "correlation": 0.567513188103912
+      },
+      {
+        "var1": "study_time_hours_zscore",
+        "var2": "final_exam_score_zscore",
+        "correlation": 0.567513188103912
+      },
+      {
+        "var1": "study_time_hours",
+        "var2": "final_exam_score",
+        "correlation": 0.5675131881039116
+      }
+    ]
+  },
+  "missing_values_summary": {
+    "parental_education": 102
+  },
+  "outliers_summary": {
+    "study_time_hours": {
+      "count": 4,
+      "percentage": 0.4,
+      "lower_bound": -0.24999999999999956,
+      "upper_bound": 7.35
+    },
+    "attendance_percent": {
+      "count": 6,
+      "percentage": 0.6,
+      "lower_bound": 59.149999999999984,
+      "upper_bound": 111.55000000000001
+    },
+    "sleep_hours": {
+      "count": 2,
+      "percentage": 0.2,
+      "lower_bound": 3.3500000000000014,
+      "upper_bound": 10.149999999999999
+    },
+    "previous_grade": {
+      "count": 3,
+      "percentage": 0.3,
+      "lower_bound": 34.89999999999999,
+      "upper_bound": 104.50000000000001
+    },
+    "final_exam_score": {
+      "count": 1,
+      "percentage": 0.1,
+      "lower_bound": 52.89999999999996,
+      "upper_bound": 114.70000000000003
+    }
+  },
+  "data_quality": {
+    "total_rows": 1000,
+    "total_columns": 18,
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0,
+    "missing_values": 102,
+    "missing_percentage": 0.5666666666666667,
+    "data_types": {
+      "float64": 11,
+      "str": 6,
+      "int64": 1
+    }
+  }
+}
