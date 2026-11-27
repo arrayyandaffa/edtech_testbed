@@ -1,34 +1,42 @@
-from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler, OneHotEncoder, OrdinalEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import (
+    MinMaxScaler,
+    OneHotEncoder,
+    OrdinalEncoder,
+    RobustScaler,
+    StandardScaler,
+)
 
-def build_preprocessor(active_num, active_cat, num_strategy, cat_strategy, scaler_type, encoder_type):
-    # Preprocessing Numerik
-    num_transformers = [('imputer', SimpleImputer(strategy=num_strategy))]
-    if scaler_type == "StandardScaler":
-        num_transformers.append(('scaler', StandardScaler()))
-    elif scaler_type == "MinMaxScaler":
-        num_transformers.append(('scaler', MinMaxScaler()))
-    elif scaler_type == "RobustScaler":
-        num_transformers.append(('scaler', RobustScaler()))
-        
-    num_pipeline = Pipeline(steps=num_transformers)
-    
-    # Preprocessing Kategorikal
-    cat_transformers = [('imputer', SimpleImputer(strategy=cat_strategy))]
-    if encoder_type == "OneHotEncoder":
-        cat_transformers.append(('encoder', OneHotEncoder(handle_unknown='ignore', sparse_output=False)))
-    else:
-        cat_transformers.append(('encoder', OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)))
-        
-    cat_pipeline = Pipeline(steps=cat_transformers)
-    
-    # Bundle dengan ColumnTransformer
-    preprocessor = ColumnTransformer(
-        transformers=[
-            ('num', num_pipeline, active_num),
-            ('cat', cat_pipeline, active_cat)
-        ], remainder='drop'
-    )
-    return preprocessor
+
+def build_preprocessor(
+    active_num, active_cat, num_strategy, cat_strategy, scaler_type, encoder_type
+):
+    transformers = []
+
+    if active_num:
+        num_steps = [("imputer", SimpleImputer(strategy=num_strategy))]
+        if scaler_type == "StandardScaler":
+            num_steps.append(("scaler", StandardScaler()))
+        elif scaler_type == "MinMaxScaler":
+            num_steps.append(("scaler", MinMaxScaler()))
+        elif scaler_type == "RobustScaler":
+            num_steps.append(("scaler", RobustScaler()))
+        transformers.append(("num", Pipeline(steps=num_steps), active_num))
+
+    if active_cat:
+        fill_val = "Missing" if cat_strategy == "constant" else None
+        cat_imputer = SimpleImputer(strategy=cat_strategy, fill_value=fill_val)
+        if encoder_type == "OneHotEncoder":
+            cat_encoder = OneHotEncoder(handle_unknown="ignore", sparse_output=False)
+        else:
+            cat_encoder = OrdinalEncoder(
+                handle_unknown="use_encoded_value", unknown_value=-1
+            )
+        cat_pipeline = Pipeline(
+            steps=[("imputer", cat_imputer), ("encoder", cat_encoder)]
+        )
+        transformers.append(("cat", cat_pipeline, active_cat))
+
+    return ColumnTransformer(transformers=transformers, remainder="drop")
